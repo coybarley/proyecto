@@ -1,0 +1,739 @@
+/*Console.Write("INGRESA UN NUMERO PARA CALCULAR SU TABLA DE MULTIPLICAR");
+int numero = int.Parse(Console.ReadLine());
+int contador = 1;
+while (contador <= 10)
+{
+    int resultado = numero * contador;
+    Console.WriteLine($"{numero} x {contador} = {resultado}");
+    contador++;
+}
+Console.WriteLine("tabla de multiplicar generada");*/
+
+/*int numero, x = 1;
+Console.Write("captura un numero para imprimir los numeros desde el 1 hasta el numero el numero qu sea indicado");
+numero = int.Parse(Console.ReadLine());
+while (x <= numero)
+{
+    Console.WriteLine(x);
+    x++;
+}
+Console.WriteLine("la lista de numeros ha sido impresa");*/
+
+
+
+/*int contadorTotal = 0;
+do
+{
+
+
+    Console.Write("ingresa un numero para calcular su tabla de multiplicar ");
+    int numero = int.Parse(Console.ReadLine());
+    int contador = 1;
+    while (contador <= 10) 
+    {
+        int resultado = numero * contador;
+        Console.WriteLine($"{numero}x{contador} = {resultado}");
+        contador++;
+    }
+    contadorTotal++;
+    Console.WriteLine("DESEAS CALCULAR OTRA TABLA DE MULTIPLICAR (SI/NO)? : ");
+    string RESPUESTA = Console.ReadLine().ToLower();
+    if (RESPUESTA != "si")
+    {
+        Console.WriteLine($"se realizaron {contadorTotal} calculos de tablas de multiplicar.");
+    }
+}while (true);*/
+
+
+
+
+
+
+/*const int CantidadValores = 10;
+    double suma = 0;
+for (int i = 1; i <= CantidadValores; i++)
+{
+    Console.Write($"Ingresa el valor {i}: ");
+    double valor = double.Parse(Console.ReadLine());
+    suma += valor;
+        }
+double promedio = suma / CantidadValores;
+Console.WriteLine($" la suma de los valores ingresados es: {suma}");
+Console.WriteLine($"el promedio de los valores ingresados es : {promedio}");}*/
+
+/*const int CantidadNotas = 10;
+double sumaNotas = 0;
+int contadorAprobados = 0; 
+int contadorReprobados = 0;
+for (int i = 1; i <= CantidadNotas; i++) 
+{
+    Console.Write($" ingresa la nota del alumno {i}: ");
+        {
+        double nota = double.Parse(Console.ReadLine());
+        sumaNotas += nota;
+        if (nota >= 7)
+        {
+            contadorAprobados++;
+        }
+        else {
+            contadorReprobados++;
+        }
+    }
+    
+}
+double promedio = sumaNotas / CantidadNotas;
+Console.WriteLine($" Canitdad de alumnos con notas mayores o iguales a 7: {contadorAprobados}");
+Console.WriteLine($"  Cantidad de alumnos con notas menores a 7 : {contadorReprobados}");
+Console.WriteLine($" promedio general de las 10 notas: {promedio}");*/
+
+/*int cantidad =
+    Convert.ToInt32(Console.ReadLine());
+
+int multiplosDeTres = 0;
+int multiplosDeCinco = 0;
+int multiplosDeAmbos = 0;
+int sumaTres = 0;
+int sumaCinco = 0;
+int sumaTotal = 0;
+for (int i = 0; i < cantidad; i++)
+{
+    Console.Write($"ingrese el numero {i + 1}: ");
+    int numero =
+        Convert.ToInt32(Console.ReadLine());
+    sumaTotal += numero;
+    if (numero % 3 == 0)
+    {
+        multiplosDeTres++;
+        sumaTres += numero;
+    }
+    if (numero % 5 == 0)
+    {
+        multiplosDeCinco++;
+        sumaCinco += numero;
+    }
+    if (numero % 3 == 0 && numero % 5 == 0)
+    {
+        multiplosDeAmbos++;
+    }
+}
+Console.WriteLine($"Hay {multiplosDeTres} numeros que son multiplos de 3. ");
+Console.WriteLine($"hay {multiplosDeCinco} numeros que son multiplos de cinco.");
+Console.WriteLine($"hay {multiplosDeAmbos} numeros que son multiplos de 3 y 5 al mismo tiempo.");*/
+
+/*int contadorNegativos, contadorPares, contadorMultiplos15, sumaImpares, totalValores, contadorRepeticiones;
+contadorRepeticiones = 0;
+totalValores = 0;
+string respuesta;
+do
+{
+    contadorNegativos = contadorPares = contadorMultiplos15 = sumaImpares = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        Console.Write("ingresa el valor numericos " + (i + 1) + ": ");
+        int valor = Convert.ToInt32(Console.ReadLine());
+        totalValores += valor;
+        if (valor < 0)
+        {
+            contadorNegativos++;
+        }
+        if (valor % 2 == 0)
+        {
+            contadorPares++;
+        }
+        if (valor % 15 == 0)
+        {
+            contadorMultiplos15++;  
+        }
+        if (valor % 2 != 0)
+        {
+            sumaImpares += valor;
+        }
+    }
+    Console.WriteLine("Valores negativos: " + contadorNegativos);
+    Console.WriteLine("valores pares: " + contadorPares);
+    Console.WriteLine("multiplos de 15: " + contadorMultiplos15);
+    Console.WriteLine("suma de impares: " + sumaImpares);
+    contadorRepeticiones++;
+    Console.Write("¿deseas repetir el proceso? (si/no): ");
+    respuesta = Console.ReadLine().ToLower();
+}
+while (respuesta == "si");
+Console.WriteLine("cantidad d eveces que se realizo el proceso: " + contadorRepeticiones);
+Console.WriteLine("suma total de los valores ingresador: " + totalValores);
+Console.WriteLine("promedio de los valores ingresados: "+ totalValores / (contadorRepeticiones * 10.0));*/
+
+
+
+/*int c1, c2, c3, promedio;
+string nombre, linea, respuesta;
+do
+{
+    Console.WriteLine("ingrese el nombnre del alumno");
+    nombre = (Console.ReadLine());
+    Console.WriteLine("ingrese la primera calificacion");
+    c1 = int.Parse(linea = Console.ReadLine());
+    Console.WriteLine("ingrese la segunda calificaion");
+    c2 = int.Parse(linea = Console.ReadLine());
+    Console.WriteLine("ingrese la tercera calificacion");
+    c3 = int.Parse(linea = Console.ReadLine());
+    Console.WriteLine(" su promedio es");
+    Console.WriteLine((c1 + c2 + c3) / 3);
+
+    Console.Write("¿deseas repetir el proceso? (si/no): ");
+    respuesta = Console.ReadLine().ToLower();
+}
+while (respuesta == "si");*/
+
+/*int num, suma, contador = 0;
+string respuesta;
+Console.WriteLine("programa que calcula la suma acumulada de un numero");
+do
+{
+    Console.WriteLine("captura el numero");
+    num = int.Parse(Console.ReadLine());
+    Console.WriteLine("la suma acumulada de {0} es {1}", num, sumaAcumulada(num));
+    contador++;
+    Console.WriteLine(" DESEA nCALCULAR LA SUMA ACUMULADA DE OTRO NUMERO? (s/n) ");
+    respuesta = Console.ReadLine();
+} while (respuesta == "s" || respuesta == "S" );
+if (contador == 1)
+{
+    Console.WriteLine(" se calculo la suma acumulada de un numero ");
+}
+
+else
+{
+    Console.WriteLine("se calculo la suma de {0} numero", contador);
+        }
+
+
+int sumaAcumulada(int num)
+{
+    return num;
+    for (int i = 1; i <= num; i++)
+    {
+        suma = suma + i;
+    }
+}*/
+
+/*int count = 0;
+do
+{
+    Console.Write("ingresa un numero: ");
+
+    int numero = int.Parse(Console.ReadLine());
+    long factorial = CalcularFactorial(numero);
+
+    Console.WriteLine($"el factorial de {numero} es {factorial}");
+
+    Console.Write("¿deseas repetir el proceso? (s/n): ");
+
+    string respuesta = Console.ReadLine();
+    if (respuesta.ToLower() != "s")
+        break;
+    count++;
+}while(true);
+Console.WriteLine("se realizo el proceso {count} veces ");*/
+
+
+/*nt[] n = new int[10];
+int i;
+for (i = 0; i < n.Length; i++)
+{
+    n[i] = i + 100;
+}
+Console.WriteLine(n);
+
+for (i = 0; i < n.Length; i++)
+{
+    Console.WriteLine("elemento {0} contiene {1}", i, n[i]);
+}
+Console.WriteLine();
+
+for (; i < n.Length; i++)
+{
+    Console.WriteLine("elemento {0} contiene {1}", i, n[i]);
+} 
+Console.WriteLine();*/
+
+
+/*int[] arreglo = new int[10];
+int totalIntercambios = 0;
+
+Console.WriteLine("introduce 10 numeros parra el arreglo");
+for (int I = 0; I < arreglo.Length; I++) 
+{
+    Console.Write($"valor {I + 1}: ");
+    arreglo[I] = Convert.ToInt32(Console.ReadLine());
+}
+
+for (int I = 0; I < arreglo.Length - 1; I++) 
+{
+    for (int j = 0; j < arreglo.Length - I - 1; j++)
+    {
+        if (arreglo[j] > arreglo[j + 1])
+        {
+            int temporal = arreglo[j];
+            arreglo[j] = arreglo[j + 1];
+            arreglo[j + 1] = temporal;
+            totalIntercambios++;
+        }
+    }
+}*/
+
+
+
+
+/*int[,] matriz = new int[4, 4];
+int nombreMatriz; 
+Console.WriteLine($"Ingrese los valores para la {nombreMatriz}:");
+for (int i = 0; i < matriz.GetLength(0); i++)
+{
+    for (int j = 0; j < matriz.GetLength(1); j++)
+    {
+        Console.SetCursorPosition(j * 4, i + 2); // Coloca el cursor en la pantalla
+        matriz[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+return matriz;
+    
+
+    static int[,] MultiplicarMatrices(int[,] matrizA, int[,] matrizB)
+{
+    int[,] resultado = new int[4, 4];
+    for (int i = 0; i < resultado.GetLength(0); i++)
+    {
+        for (int j = 0; j < resultado.GetLength(1); j++)
+        {
+            resultado[i, j] = 0;
+            for (int k = 0; k < 4; k++)
+            {
+                resultado[i, j] += matrizA[i, k] * matrizB[k, j];
+            }
+        }
+    }
+    return resultado;
+}
+
+static void MostrarMatriz(int[,] matriz, ConsoleColor color)
+{
+    Console.ForegroundColor = color;
+    for (int i = 0; i < matriz.GetLength(0); i++)
+    {
+        for (int j = 0; j < matriz.GetLength(1); j++)
+        {
+            Console.Write($"{matriz[i, j],4}");
+        }
+        Console.WriteLine();
+    }
+    Console.ResetColor();
+}
+int CapturarMatriz;
+    int contadorMultiplicaciones = 0;
+    string respuesta;
+    do
+    {
+        int[,] matrizA = CapturarMatriz("Matriz A");
+        int[,] matrizB = CapturarMatriz("Matriz B");
+        int[,] matrizResultado = MultiplicarMatrices(matrizA, matrizB);
+
+        Console.WriteLine("\nMatriz A:");
+        MostrarMatriz(matrizA, ConsoleColor.Yellow);
+        Console.WriteLine("\nMatriz B:");
+        MostrarMatriz(matrizB, ConsoleColor.Green);
+        Console.WriteLine("\nMatriz Resultado:");
+        MostrarMatriz(matrizResultado, ConsoleColor.Cyan);
+
+        contadorMultiplicaciones++;
+
+        Console.WriteLine("\n¿Desea realizar otra multiplicación de matrices? (si/no)");
+        respuesta = Console.ReadLine().ToLower();
+    } while (respuesta == "si");
+
+    Console.WriteLine($"Se realizaron {contadorMultiplicaciones} multiplicaciones de matrices.");*/
+
+
+
+/* Console.Title = "Multiplicación de Matrices";
+
+ int[,] matrizA = new int[4, 4];
+ int[,] matrizB = new int[4, 4];
+ int[,] matrizResultado = new int[4, 4];
+ int contadorMultiplicaciones = 0;
+
+ do
+ {
+     Console.Clear();
+     Console.ForegroundColor = ConsoleColor.Yellow;
+     Console.WriteLine("Ingrese los valores de la matriz A:");
+     CapturarDatosMatriz(matrizA);
+
+     Console.Clear();
+     Console.ForegroundColor = ConsoleColor.Cyan;
+     Console.WriteLine("Ingrese los valores de la matriz B:");
+     CapturarDatosMatriz(matrizB);
+
+     MultiplicarMatrices(matrizA, matrizB, matrizResultado);
+
+     Console.Clear();
+     Console.ForegroundColor = ConsoleColor.Green;
+     Console.WriteLine("El resultado de la multiplicación de las matrices es:");
+     MostrarMatriz(matrizResultado);
+
+     contadorMultiplicaciones++;
+
+     Console.WriteLine("\n¿Desea realizar otra multiplicación de matrices? (Sí/No)");
+ } while (Console.ReadLine().ToLower() == "si");
+
+ Console.ForegroundColor = ConsoleColor.White;
+ Console.WriteLine($"Se realizaron un total de {contadorMultiplicaciones} multiplicaciones de matrices.");
+
+
+static void CapturarDatosMatriz(int[,] matriz)
+{
+ for (int i = 0; i < 4; i++)
+ {
+     for (int j = 0; j < 4; j++)
+     {
+         Console.Write($"Ingrese el valor para la posición [{i},{j}]: ");
+         matriz[i, j] = int.Parse(Console.ReadLine());
+     }
+ }
+}
+
+static void MultiplicarMatrices(int[,] matrizA, int[,] matrizB, int[,] matrizResultado)
+{
+ for (int i = 0; i < 4; i++)
+ {
+     for (int j = 0; j < 4; j++)
+     {
+         matrizResultado[i, j] = 0;
+         for (int k = 0; k < 4; k++)
+         {
+             matrizResultado[i, j] += matrizA[i, k] * matrizB[k, j];
+         }
+     }
+ }
+}
+
+static void MostrarMatriz(int[,] matriz)
+{
+ for (int i = 0; i < 4; i++)
+ {
+     for (int j = 0; j < 4; j++)
+     {
+         Console.Write(matriz[i, j] + "\t");
+     }
+     Console.WriteLine();
+ }
+}*/
+
+/*using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Title = "Multiplicación de Matrices";
+
+        int[,] matrizA = new int[4, 4];
+        int[,] matrizB = new int[4, 4];
+        int[,] matrizResultado = new int[4, 4];
+        int contadorMultiplicaciones = 0;
+
+        do
+        {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Ingrese los valores de la matriz A:");
+            CapturarDatosMatriz(matrizA);
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Ingrese los valores de la matriz B:");
+            CapturarDatosMatriz(matrizB);
+
+            MultiplicarMatrices(matrizA, matrizB, matrizResultado);
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("El resultado de la multiplicación de las matrices es:");
+            MostrarMatriz(matrizResultado);
+
+            contadorMultiplicaciones++;
+
+            Console.WriteLine("\n¿Desea realizar otra multiplicación de matrices? (Sí/No)");
+        } while (Console.ReadLine().ToLower() == "si");
+
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine($"Se realizaron un total de {contadorMultiplicaciones} multiplicaciones de matrices.");
+    }
+
+    static void CapturarDatosMatriz(int[,] matriz)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                Console.Write($"Ingrese el valor para la posición [{i},{j}]: ");
+                matriz[i, j] = int.Parse(Console.ReadLine());
+            }
+        }
+    }
+
+    static void MultiplicarMatrices(int[,] matrizA, int[,] matrizB, int[,] matrizResultado)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                matrizResultado[i, j] = 0;
+                for (int k = 0; k < 4; k++)
+                {
+                    matrizResultado[i, j] += matrizA[i, k] * matrizB[k, j];
+                }
+            }
+        }
+    }
+
+    static void MostrarMatriz(int[,] matriz)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                Console.Write(matriz[i, j] + "\t");
+            }
+            Console.WriteLine();
+        }
+    }
+}*/
+
+/*using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int count = 0;
+        
+        do
+        {
+            Console.Write("Ingrese un número: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            int sumaAcumulada = SumaAcumulada(numero);
+
+            Console.WriteLine($"La suma acumulada es: {sumaAcumulada}");
+
+            Console.Write("¿Desea repetir el proceso? (s/n): ");
+            string respuesta = Console.ReadLine();
+
+            if (respuesta.ToLower() != "s")
+                break;
+
+            count++;
+        } while (true);
+
+        Console.WriteLine($"Se realizó el proceso {count} veces.");
+    }
+
+    static int SumaAcumulada(int num)
+    {
+        int suma = 0;
+        for (int i = 1; i <= num; i++)
+        {
+            suma += i;
+        }
+        return suma;
+    }
+}*/
+
+
+/*using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int count = 0;
+
+        do
+        {
+            Console.Write("Ingrese un número: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            long factorial = CalcularFactorial(numero);
+
+            Console.WriteLine($"El factorial de {numero} es: {factorial}");
+
+            Console.Write("¿Desea repetir el proceso? (s/n): ");
+            string respuesta = Console.ReadLine();
+
+            if (respuesta.ToLower() != "s")
+                break;
+
+            count++;
+        } while (true);
+
+        Console.WriteLine($"Se realizó el proceso {count} veces.");
+    }
+
+    static long CalcularFactorial(int num)
+    {
+        if (num == 0)
+            return 1;
+
+        long factorial = 1;
+        for (int i = 1; i <= num; i++)
+        {
+            factorial *= i;
+        }
+        return factorial;
+    }
+}*/
+
+
+/*using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int count = 0;
+
+        do
+        {
+            Console.Write("Ingrese un número: ");
+            double numero = double.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese la potencia a la que desea elevar el número: ");
+            int potencia = int.Parse(Console.ReadLine());
+
+            double resultado = CalcularPotencia(numero, potencia);
+
+            Console.WriteLine($"El resultado de elevar {numero} a la potencia {potencia} es: {resultado}");
+
+            Console.Write("¿Desea repetir el proceso? (s/n): ");
+            string respuesta = Console.ReadLine();
+
+            if (respuesta.ToLower() != "s")
+                break;
+
+            count++;
+        } while (true);
+
+        Console.WriteLine($"Se realizó el proceso {count} veces.");
+    }
+
+    static double CalcularPotencia(double num, int potencia)
+    {
+        if (potencia == 0)
+            return 1;
+
+        double resultado = 1;
+        for (int i = 0; i < Math.Abs(potencia); i++)
+        {
+            resultado *= num;
+        }
+
+        if (potencia < 0)
+            resultado = 1 / resultado;
+
+        return resultado;
+    }
+}*/
+
+/*using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] arreglo = new int[10];
+        int intercambios = 0;
+
+        // Capturar valores para llenar el arreglo
+        for (int i = 0; i < arreglo.Length; i++)
+        {
+            Console.Write($"Ingrese el valor {i + 1}: ");
+            arreglo[i] = int.Parse(Console.ReadLine());
+        }
+
+        // Ordenar el arreglo de menor a mayor con el método de burbuja
+        for (int i = 0; i < arreglo.Length - 1; i++)
+        {
+            for (int j = 0; j < arreglo.Length - 1; j++)
+            {
+                if (arreglo[j] > arreglo[j + 1])
+                {
+                    // Intercambiar valores
+                    int temp = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = temp;
+
+                    intercambios++;
+                }
+            }
+        }
+
+        // Mostrar el contenido ordenado del arreglo
+        Console.WriteLine("\nContenido ordenado del arreglo:");
+        foreach (int valor in arreglo)
+        {
+            Console.Write($"{valor} ");
+        }
+
+        // Mostrar la cantidad de intercambios realizados
+        Console.WriteLine($"\n\nCantidad de intercambios realizados: {intercambios}");
+
+        Console.ReadLine();
+    }
+}*/
+
+/*using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] arreglo = new int[10];
+
+        // Capturar valores para llenar el arreglo
+        for (int i = 0; i < arreglo.Length; i++)
+        {
+            Console.Write($"Ingrese el valor {i + 1}: ");
+            arreglo[i] = int.Parse(Console.ReadLine());
+        }
+
+        // Solicitar número para buscar en el arreglo
+        Console.Write("\nIngrese el número a buscar en el arreglo: ");
+        int numeroBuscado = int.Parse(Console.ReadLine());
+
+        // Buscar el número en el arreglo
+        bool encontrado = false;
+        int cantidadVecesEncontrado = 0;
+        Console.Write("\nEl número se encuentra en las posiciones: ");
+        for (int i = 0; i < arreglo.Length; i++)
+        {
+            if (arreglo[i] == numeroBuscado)
+            {
+                Console.Write($"{i} ");
+                encontrado = true;
+                cantidadVecesEncontrado++;
+            }
+        }
+
+        // Mostrar resultado
+        if (encontrado)
+        {
+            Console.WriteLine($"\n\nEl número {numeroBuscado} se encontró {cantidadVecesEncontrado} veces en el arreglo.");
+        }
+        else
+        {
+            Console.WriteLine($"\n\nEl número {numeroBuscado} no se encuentra dentro del arreglo.");
+        }
+
+        Console.ReadLine();
+    }
+}*/
